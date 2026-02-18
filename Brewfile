@@ -24,4 +24,3 @@ brew "lazysql"
 
 # Apps
 cask "kitty"
-cask "1password-cli"
