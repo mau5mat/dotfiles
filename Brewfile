@@ -24,3 +24,6 @@ brew "lazysql"
 
 # Apps
 cask "kitty"
+
+# Fonts
+cask "font-fira-code-nerd-font"
