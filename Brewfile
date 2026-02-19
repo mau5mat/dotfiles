@@ -12,6 +12,9 @@ brew "pyenv"
 brew "rbenv"
 brew "ripgrep"
 
+# Haskell
+brew "ghcup"
+
 # Neovim + treesitter
 brew "neovim"
 brew "tree-sitter"

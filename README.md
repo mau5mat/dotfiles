@@ -22,4 +22,5 @@ git clone https://github.com/mau5mat/dotfiles ~/dotfiles
 - **Ruby**: `rbenv install <version>` then `rbenv global <version>`
 - **Python**: `pyenv install <version>` then `pyenv global <version>`
 - **Rust**: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+- **Haskell**: `ghcup tui` to install GHC + Cabal, then install `haskell-language-server` via Mason in Neovim
 - **Neovim**: launch and run `:Lazy` to install plugins, then `:TSInstall all` for treesitter parsers
