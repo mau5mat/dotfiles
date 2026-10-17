@@ -1,3 +1,22 @@
 [user]
 	name = Matt Roberts
 	email = mau5mat@gmail.com
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[diff]
+	tool = difftastic
+[difftool]
+	prompt = false
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+[alias]
+	update = "!f(){ git pull upstream development && git submodule update --recursive; };f"
+	unstage = reset HEAD --
+	pushf = push --force-with-lease
+	fix = !nvim +/HEAD $(git diff --name-only --relative --diff-filter=U | uniq)
+	add-unmerged = !git add `git diff --name-only --diff-filter=U`
+	difft = difftool

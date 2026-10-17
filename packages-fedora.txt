@@ -1,0 +1,26 @@
+# Fedora equivalent of the Brewfile, installed with dnf by install.sh.
+# Not here: lazygit/lazydocker/lazysql and the Nerd Font (no dnf packages,
+# install.sh fetches release binaries), ghcup/rustup/pyenv (own installers),
+# prettier (LazyVim installs it through Mason).
+
+# Core tools
+bat
+difftastic
+direnv
+fd-find
+fzf
+gh
+golang
+jq
+just
+pipx
+rbenv
+ripgrep
+zsh
+
+# Neovim + treesitter
+neovim
+tree-sitter-cli
+
+# Apps
+kitty

@@ -1,6 +1,7 @@
 # Core tools
 brew "bat"
 brew "difftastic"
+brew "direnv"
 brew "fd"
 brew "fzf"
 brew "gh"
