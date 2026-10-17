@@ -20,3 +20,7 @@
 	fix = !nvim +/HEAD $(git diff --name-only --relative --diff-filter=U | uniq)
 	add-unmerged = !git add `git diff --name-only --diff-filter=U`
 	difft = difftool
+
+# Machine-specific overrides (untracked, optional). Keep this last so it wins.
+[include]
+	path = ~/.gitconfig.local

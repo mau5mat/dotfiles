@@ -28,6 +28,18 @@ Existing configs are moved to `<file>.bak.<timestamp>` before being symlinked.
 export DEV_DIR="$HOME/Development"
 ```
 
+Git reads `~/.gitconfig.local` last, so it overrides the tracked `.gitconfig`. To use a work email only for repos under a work folder:
+
+```ini
+# ~/.gitconfig.local
+[includeIf "gitdir:~/Development/work/"]
+	path = ~/.gitconfig-work
+
+# ~/.gitconfig-work
+[user]
+	email = you@work.com
+```
+
 ## Manual steps after install
 
 - **Ruby**: `rbenv install <version>` then `rbenv global <version>`
